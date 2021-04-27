@@ -41,24 +41,32 @@ for (var i = 0; i < 10; i++ ) {
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
 //Da rivedere
-/* var invited = ['Lorenzo', 'Emanuela', 'Chiara', 'Tiziano', 'Martina'];
+var invited = ['Lorenzo', 'Emanuela', 'Chiara', 'Tiziano', 'Martina'];
 console.log(invited);
 
 var userName = prompt('Inserisci il tuo nome');
 console.log(userName);
 
+var invitato = false;
+
 for (i = 0; i < invited.length; i++) {
-    var result = invited[i];
-    if(invited[i].indexOf = userName){
-        alert('Okey');
-        break;
+    if(userName == invited[i]){
+        invitato = true;
     }
-} */
+}
+
+if(invitato){
+    alert("Welcome to the party");
+
+} else {
+    alert("Sorry, non puoi entrare")
+}
+
     
 
 /* SNACK 4 */
 
-var array = [];
+/* var array = [];
 
 for (i = 0; i < 6; i++) {
     var number = Number(prompt('Inserisci un numero'));
@@ -68,7 +76,7 @@ for (i = 0; i < 6; i++) {
     }
 }
 
-console.log('Nell\'array sono stati aggiunti questi valori: ' + array);
+console.log('Nell\'array sono stati aggiunti questi valori: ' + array); */
 
 
 
