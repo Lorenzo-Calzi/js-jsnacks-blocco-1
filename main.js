@@ -24,9 +24,11 @@ var somma = 0;
 for (var i = 0; i < 10; i++ ) {
     var number = Number(prompt('Inserisci un numero'))  
     var somma = somma + number;
+    console.log('Il numero inserito è: ' + number);
+
 }
 
-console.log('La somma è: ' + somma);  
+console.log('La somma dei numeri inseriti è: ' + somma);  
 
 
 
