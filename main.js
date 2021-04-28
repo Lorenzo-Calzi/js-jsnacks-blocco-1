@@ -40,8 +40,7 @@ for (var i = 0; i < 10; i++ ) {
 
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
-//Da rivedere
-var invited = ['Lorenzo', 'Emanuela', 'Chiara', 'Tiziano', 'Martina'];
+/* var invited = ['Lorenzo', 'Emanuela', 'Chiara', 'Tiziano', 'Martina'];
 console.log(invited);
 
 var userName = prompt('Inserisci il tuo nome');
@@ -60,7 +59,7 @@ if(invitato){
 
 } else {
     alert("Sorry, non puoi entrare")
-}
+} */
 
     
 
@@ -70,13 +69,28 @@ if(invitato){
 
 for (i = 0; i < 6; i++) {
     var number = Number(prompt('Inserisci un numero'));
-    if(number % 2){
+    if(number % 2 != 0){
         console.log(number + 'è dispari');
         var number = array.push(number);
     }
 }
 
 console.log('Nell\'array sono stati aggiunti questi valori: ' + array); */
+
+
+
+/* SNACK 5 */
+//Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.
+var sceltaUtente = Number(prompt('Quanti numeri vuoi calcolare?'));
+console.log("L'utente ha scelto di calcolare : " + sceltaUtente + " numeri");
+
+for (var i = 0; i < sceltaUtente; i++) {
+    var numbers = Number(prompt('Inscerisci un numero'))
+    console.log(numbers);
+    var cubo = Math.pow(numbers, 3)
+    document.writeln(cubo);
+}
+
 
 
 
