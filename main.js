@@ -1,13 +1,12 @@
-/* SNACK 1*/
+/* SNACK 2*/
+//L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 
-//L’utente inserisce due parole in successione, con due prompt.
 /* var firstWord = prompt('inserisci una parola');
 console.log(firstWord);
 
 var secondWord = prompt('inserisci un altra parola');
 console.log(secondWord);
 
-//Il software stampa prima la parola più corta, poi la parola più lunga.
 if(firstWord.length > secondWord.length) {
     console.log('La parola più corta è: ' + secondWord);
     console.log('La parola più lunga è: ' + firstWord);
@@ -20,9 +19,9 @@ if(firstWord.length > secondWord.length) {
 
 
 
-/* SNACK 2 */
+/* SNACK 3 */
+//Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 
-//Il software deve chiedere per 10 volte all’utente di inserire un numero.
 /* var sum = 0;
 
 for (var i = 0; i < 10; i++ ) {
@@ -30,14 +29,12 @@ for (var i = 0; i < 10; i++ ) {
     sum += number;
     console.log('Il numero inserito è: ' + number);
 }
- */
-//Il programma stampa la somma di tutti i numeri inseriti.
-/* console.log('La somma dei numeri inseriti è: ' + sum);   */
+ 
+console.log('La somma dei numeri inseriti è: ' + sum);   */
 
 
 
-/* SNACK 3 */
-
+/* SNACK 4 */
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
 /* var invited = ['Lorenzo', 'Emanuela', 'Chiara', 'Tiziano', 'Martina'];
@@ -63,7 +60,8 @@ if(invitato){
 
     
 
-/* SNACK 4 */
+/* SNACK 5 */
+//Crea un array vuoto.Chiedi per 6 volte all’utente di inserire un numero,se è dispari inseriscilo nell’array
 
 /* var array = [];
 
@@ -79,9 +77,10 @@ console.log('Nell\'array sono stati aggiunti questi valori: ' + array); */
 
 
 
-/* SNACK 5 */
+/* SNACK 6 */
 //Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.
-var sceltaUtente = Number(prompt('Quanti numeri vuoi calcolare?'));
+
+/* var sceltaUtente = Number(prompt('Quanti numeri vuoi calcolare?'));
 console.log("L'utente ha scelto di calcolare : " + sceltaUtente + " numeri");
 
 for (var i = 0; i < sceltaUtente; i++) {
@@ -89,7 +88,25 @@ for (var i = 0; i < sceltaUtente; i++) {
     console.log(numbers);
     var cubo = Math.pow(numbers, 3)
     document.writeln(cubo);
+} */
+
+
+
+/* SNACK 8 */
+//Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
+
+var userNumber = Number(prompt("inserisci un numero di 4 cifre"))
+console.log(userNumber);
+
+var somma = 0;
+while(userNumber > 0){
+    somma = somma + userNumber % 10;
+    console.log(userNumber);
+    userNumber = Math.floor(userNumber / 10);
 }
+
+console.log(somma);
+
 
 
 
