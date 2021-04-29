@@ -92,10 +92,21 @@ for (var i = 0; i < sceltaUtente; i++) {
 
 
 
+/* SNACK 7 */
+//Calcolare le potenze di 2 elevato alla N senza superare 1000
+
+/* var counter = 0;
+while(Math.pow(2, counter) < 1000) {
+    console.log(Math.pow(2, counter));
+    counter++;
+} */
+
+
+
 /* SNACK 8 */
 //Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
 
-var userNumber = Number(prompt("inserisci un numero di 4 cifre"))
+/* var userNumber = Number(prompt("inserisci un numero di 4 cifre"))
 console.log(userNumber);
 
 var somma = 0;
@@ -105,7 +116,7 @@ while(userNumber > 0){
     userNumber = Math.floor(userNumber / 10);
 }
 
-console.log(somma);
+console.log(somma); */
 
 
 
