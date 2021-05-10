@@ -26,7 +26,7 @@ console.log('L\'ipotenusa è: ' + ipotenusa);
 var perimetro = (ipotenusa + triangoloRett.base + triangoloRett.altezza);
 console.log('Il perimetro è: ' + perimetro);
 
-var area = ((triangoloRett.altezza * ipotenusa)/2);
+var area = ((triangoloRett.altezza * triangoloRett.base)/2);
 console.log('L\'area è: ' + area);
 
 
